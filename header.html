@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html>
+<html xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width" />
+  <meta content='IE=edge' http-equiv='X-UA-Compatible' />
+	<link expr:href='data:blog.url' rel='canonical'/>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:300,400,700|Open+Sans:400,700,400italic|Poppins:regular,500,600,700' media='all' rel='stylesheet' type='text/css'/>
+    <link href='//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' rel='stylesheet'/>
+    <b:include data='blog' name='all-head-content'/>
+	<title>
+		<b:if cond='data:blog.pageType == &quot;index&quot;'>
+			<data:blog.pageTitle/>
+			<b:else/>
+				<b:if cond='data:blog.pageType != &quot;error_page&quot;'>
+				<data:blog.pageName/>
+				<b:else/>
+				ERORR - 404 - <data:blog.title/>
+			</b:if>
+		</b:if>
+	</title>
+	<b:skin><![CDATA[
+
+		]]></b:skin>
+</head>
+<body>
+	<header>
+		
+	</header>
+	<section>
+		<div id="main">
+				<div class="main-section">
+				<b:section id="main" class="main" showaddelement="yes">
+				<b:widget id="Blog1" locked="false" title="Blog" type="Blog" version="1"/>
+			</b:section>
+			</div>
+	</section>
+	<footer>
+		
+	</footer>
+</body>
