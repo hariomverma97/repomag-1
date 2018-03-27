@@ -22,11 +22,35 @@
 	</title>
 	<b:skin><![CDATA[
 
+	/*Header css*/
+	body#layout #header{
+		width:30%;
+	}
+	.head-main{
+	display: grid;
+		grid-gap: 5px;
+		grid-template-columns: 1fr 3fr;
+}
+	#Header1 h1{
+	text-align:center;
+}
+	.quickedit{
+	display: none;
+}
+
 		]]></b:skin>
 </head>
 <body>
 	<header>
-		
+		<div class="head-main">
+			<a expr:href='data:blog.homepageUrl' >
+			<b:section id="header" class="header" showaddelement="no">
+			<b:widget id="Header1" locked="true" title="Header" type="Header"/>
+		</b:section></a>
+		<b:section id="header1" class="header" showaddelement="no">
+			<b:widget id="HTML1" locked="true" title="HTML/JavaScript" type="HTML"/>
+		</b:section>
+		</div>
 	</header>
 	<section>
 		<div id="main">
@@ -35,8 +59,10 @@
 				<b:widget id="Blog1" locked="false" title="Blog" type="Blog" version="1"/>
 			</b:section>
 			</div>
+		</div>
 	</section>
 	<footer>
 		
 	</footer>
 </body>
+</html>
